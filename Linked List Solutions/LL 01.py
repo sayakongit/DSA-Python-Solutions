@@ -18,6 +18,12 @@ class LinkedList:
             itr = itr.next
         print(llstr)
 
+    def get_last_node(self):
+        itr = self.head
+        while itr.next:
+            itr = itr.next
+        print(itr.data)
+
     def get_length(self):
         count = 0
         itr = self.head
@@ -140,6 +146,7 @@ if __name__ == '__main__':
     ll.print()
     ll.remove_by_value("figs")
     ll.print()
+    ll.get_last_node()
     ll.remove_by_value("banana")
     ll.remove_by_value("mango")
     ll.remove_by_value("apple")
