@@ -5,3 +5,4 @@ with open("poem.txt", "r") as p:
         arr.append(temp)
 
 print(arr)
+
